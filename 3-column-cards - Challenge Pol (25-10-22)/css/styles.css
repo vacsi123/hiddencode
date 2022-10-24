@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Lexend+Deca:wght@300&display=swap');
+
+body{
+    margin:0px;
+    padding:0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+
+.columns{
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.Sedans, .Suvs, .Luxury{
+    padding: 40px;
+    width: 100%;
+}
+
+.Sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.Suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:40px;
+    color: hsl(0, 0%, 95%)
+}
+
+.text{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.button p{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px 25px;
+    display: inline-block;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    border: 3px white solid;
+}
+
+.text p{
+    margin:6px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.Sedans .button p{
+    color:hsl(31, 77%, 52%);
+}
+
+.Suvs .button p{
+    color:hsl(184, 100%, 22%);
+}
+
+.Luxury .button p{
+    color:hsl(179, 100%, 13%);
+}
+
+.Sedans .button p:hover{
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 3px white solid;
+}
+
+.Suvs .button p:hover{
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 3px white solid;
+}
+
+.Luxury .button p:hover{
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 3px white solid;
+}
+
+@media screen and (min-width:768px){
+    .Sedans, .Suvs, .Luxury{
+        width: 24%
+    }
+
+}
