@@ -57,58 +57,59 @@ img{
 }
     
 
-    .suvs p{
-        margin-left: 20px;
-        font-family: 'Lexend Deca', sans-serif;
-        font-size: 15px;
-        margin-bottom: 100px;
+.suvs p{
+    margin-left: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 100px;
         
-    }
-    .suvs span {
-        margin-top: 50px;
-        margin-left: 20px;
-        background-color: #f2f2f2;
-        border-radius: 30px;
-        padding: 10px 20px;
-        color: #006970;
-        font-family: 'Lexend Deca', sans-serif;
+}
+.suvs span {
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #006970;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-        .luxury{
-            padding: 20px;
-            background-color: #004241;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            padding-bottom: 65px;
+.luxury{
+    padding: 20px;
+    background-color: #004241;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 65px;
             
-        }
-        .luxury header {
-            margin-top: 30px;
-            margin-left: 20px;
-            font-family: 'Big Shoulders Display', cursive;
-            font-size: 25px;
-        margin-bottom: 40px;}
+}
+.luxury header {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
         
-            .luxury p{
-                margin-left: 20px;
-                font-family: 'Lexend Deca', sans-serif;
-                font-size: 15px;
-                margin-bottom: 100px;
-            }
-            .luxury span {
-                margin-left: 20px; 
-                background-color: #f2f2f2;
-                border-radius: 30px;
-                padding: 10px 20px;
-                color:#004241 ;
-                font-family: 'Lexend Deca', sans-serif;
-            }
+.luxury p{
+    margin-left: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+.luxury span {
+    margin-left: 20px; 
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color:#004241 ;
+    font-family: 'Lexend Deca', sans-serif;
+}
 
-                .main span:hover {
-                    background-color: hsla(31, 77%, 52%, 0) ;
-                    border: 2px solid hsl(0, 0%, 95%); 
-                     color:  hsl(0, 0%, 95%);
-                     cursor: pointer;
+.main span:hover {
+    background-color: hsla(31, 77%, 52%, 0) ;
+    border: 2px solid hsl(0, 0%, 95%); 
+    color:  hsl(0, 0%, 95%);
+    cursor: pointer;
                      }
 @media screen and (min-width:786px) {
                         .main{
