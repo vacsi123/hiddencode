@@ -3,7 +3,7 @@
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background: hsl(185, 75%, 39%);
-    background-image: url(/Users/simon/Documents/GitHub/hiddencode/challenge_simon_lauxmann/profile_card_simon_lauxmann/profileCard/images/bg-pattern-top.svg), url(/Users/simon/Documents/GitHub/hiddencode/challenge_simon_lauxmann/profile_card_simon_lauxmann/profileCard/images/bg-pattern-bottom.svg);
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
     background-position: -200px -200px, 200px 400px;
     background-size: 500px, 500px;
     background-repeat: no-repeat, no-repeat;
@@ -100,7 +100,7 @@ body{
 @media (min-width: 600px){
     body{
         background-size: 1200px, 1200px;
-        background-image: url(/Users/simon/Documents/GitHub/hiddencode/challenge_simon_lauxmann/profile_card_simon_lauxmann/profileCard/images/bg-pattern-top.svg), url(/Users/simon/Documents/GitHub/hiddencode/challenge_simon_lauxmann/profile_card_simon_lauxmann/profileCard/images/bg-pattern-bottom.svg);
+        background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
         background-position: -500px -600px, 700px 400px;
         background-repeat: no-repeat, no-repeat;
     }
