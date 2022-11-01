@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* GENERAL STYLES */
+body{
+    margin: 0px;
+    padding: 0px;
+    max-width: 1444px;
+    background-color: hsl(185, 75%, 39%);
+}
+p{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.name, .number{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/*BACKGROUND*/
+.background img{
+    width: 20%;
+}
+
+/* CARD */
+.top img, .bottom img{
+    width: 20%;
+}
+.banner img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.info{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+}
+
+/* CARD INFO*/
+.profile-pic, .presentation, .location{
+    display: flex;
+    justify-content: center;
+}
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.profile-pic img{
+    border-radius: 50px;
+    border: white 1px solid;
+}
+.presentation{
+    gap: 10px;
+}
+.tag p, .number p,.name p,.age p{
+    margin: 0px;
+}
+.followers, .likes, .photos{
+text-align: center;
+}
