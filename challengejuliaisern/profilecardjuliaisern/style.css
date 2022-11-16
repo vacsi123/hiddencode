@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: hsl(185, 75%, 39%);
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-position: -200px -200px, 200px 400px;
+    background-size: 500px, 500px;
+    background-repeat: no-repeat, no-repeat;
+}
+.box{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.box .top img{
+    width: 100% ;
+    margin-bottom: -7%;
+    margin-top: -0%;
+    height: 200%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.box .top .photo{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+.box .photo img{
+    border-radius: 1000px;
+    width: 30%;
+    border: 5px solid white;
+}
+.box .data{
+display: flex;
+    justify-content: center;
+    font-size: 18px;
+    gap: 12px;
+    margin-bottom: -10px;
+}
+.box .data .age{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.box .location{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+    margin-top: 0;
+}
+.box .data .name{
+    font-weight: 700;
+}
+
+.box .bottom{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 18px;
+    border-top: 10px solid hsl(0, 0, 70%);
+    padding: 1px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0,0,0,.2);
+}
+.box .bottom .numbers{
+    color:hsl(229, 23%, 23%);
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+.box .bottom .text{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+}
+
+.name {
+    margin-top: 30pt;
+}
+.age{
+    margin-top: 30pt;
+}
+
+ .hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    margin-top: 20pt;
+    margin-bottom: 0%;
+    
+
+}
+@media (min-width: 600px){
+    body{
+        background-size: 1200px, 1200px;
+        background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+        background-position: -500px -600px, 700px 400px;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .box{
+        width: 28%;
+        margin-top: 17%;
+        margin: auto;
+    }
+    .box .top .photo{
+        
+        margin-top: -40px;
+    }
+}
