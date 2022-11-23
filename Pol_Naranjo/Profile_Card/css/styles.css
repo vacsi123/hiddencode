@@ -6,6 +6,7 @@ body{
     padding: 0px;
     max-width: 1444px;
     background-color: hsl(185, 75%, 39%);
+    align-items: center;
 }
 p{
     font-family: 'Kumbh Sans', sans-serif;
@@ -16,22 +17,36 @@ p{
 }
 
 /*BACKGROUND*/
-.background img{
-    width: 20%;
+.background{
+    position: relative;
+}
+.top{
+    position: absolute;
+    top: -133px;
+    left: -70px;
+}
+.bottom{
+    position: absolute;
+    bottom: -668px;
+    right: -108px;
 }
 
 /* CARD */
-.top img, .bottom img{
-    width: 20%;
+.card{
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    border-radius: 15px;
 }
-.banner img{
+.top, .bottom{
+    width: 80%;
+}
+.banner{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .info{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: white;
+    position: relative;
 }
 
 /* CARD INFO*/
@@ -46,14 +61,17 @@ p{
 }
 .profile-pic img{
     border-radius: 50px;
-    border: white 1px solid;
+    border: white 5px solid;
+    position: absolute;
+    top: -70px;
 }
 .presentation{
     gap: 10px;
+    padding-top: 50px;
 }
 .tag p, .number p,.name p,.age p{
     margin: 0px;
 }
 .followers, .likes, .photos{
-text-align: center;
+    text-align: center;
 }
