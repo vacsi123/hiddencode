@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/*GENERAL STYLES*/
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+h1{
+    font-weight: 700;   
+}
+h4{
+    font-weight: 400;
+}
+h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color:#363636;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+/*GRID*/
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.grid-item{
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 15px;
+}
+
+/*PRODUCT & SHOP IMAGES*/
+.images{
+    position: relative;
+    text-align: center;
+}
+.product-image{
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.product-shop{
+    position: absolute;
+    width: 10%;
+    top: 5px;
+    right: 5px;
+}
+
+/*DESCRIPTION*/
+.description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #363636;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+/*PRICES*/
+.price{
+    display:flex;
+    gap: 5px;
+    
+}
+.discounted-price{
+    color:#FF6669;
+    margin: 0px;
+    padding: 0px;
+}
+.actual-price{
+    text-decoration:line-through;
+    color:#9C9C9C;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+/*LINEA*/
+.linea{
+    opacity: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+/*EXTRAS*/
+.extras, .shipping, .gift{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.shipping img, .gift img{
+    width: 14px;
+    height: 11px;
+}
+
+/*BUTTONS*/
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.deal-button{
+    display: inline-block;
+    color: white;
+    background-color: #1AB76C;
+    margin: 0px;
+    padding: 10px 20%;
+    border-radius: 50px;
+    border: #1AB76C 2px solid;
+}
+.more-button{
+    display: inline-block;
+    font-size: 25px;
+    color: #1AB76C;
+    background-color: white;
+    padding: 8px 10px;
+    margin: 0px;
+    border-radius: 50px;
+    border: #1AB76C 2px solid;
+    line-height: 20px;
+}
+
+@media screen and (min-width:768px){
+    .grid-item{
+        width: calc(25% - 40px);
+    }
+}
