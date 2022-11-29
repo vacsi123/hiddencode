@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* GENERAL STYLES */
+body{
+    margin: 0px;
+    padding: 0px;
+    max-width: 1444px;
+    background-color: hsl(185, 75%, 39%);
+    align-items: center;
+}
+p{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.name, .number{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/*BACKGROUND*/
+.background{
+    position: relative;
+}
+.top{
+    position: absolute;
+    top: -133px;
+    left: -70px;
+}
+.bottom{
+    position: absolute;
+    bottom: -668px;
+    right: -108px;
+}
+
+/* CARD */
+.card{
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    border-radius: 15px;
+}
+.top, .bottom{
+    width: 80%;
+}
+.banner{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.info{
+    position: relative;
+}
+
+/* CARD INFO*/
+.profile-pic, .presentation, .location{
+    display: flex;
+    justify-content: center;
+}
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.profile-pic img{
+    border-radius: 50px;
+    border: white 5px solid;
+    position: absolute;
+    top: -70px;
+}
+.presentation{
+    gap: 10px;
+    padding-top: 50px;
+}
+.tag p, .number p,.name p,.age p{
+    margin: 0px;
+}
+.followers, .likes, .photos{
+    text-align: center;
+}
