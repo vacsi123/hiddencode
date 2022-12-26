@@ -1,0 +1,61 @@
+
+.controls{
+    display: flex;
+    margin: 0 auto;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.black{
+    background-color: rgb(252, 113, 0);
+    width: 20%;
+    border-radius: 70px;
+    padding: 20px;
+    margin-top: 15px;
+    display: block;
+    margin: 0 auto;
+    
+    border: 4px solid black;
+   
+     }
+
+video{
+    width: 50%;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+@media screen and (min-width:786px) {
+
+.video{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    
+
+}
+
+.btnplay{
+    display: block;
+    margin: 0 auto;
+}
+.btnstop{
+    display: block;
+    margin: 0 auto;
+}
+.btnpause{
+    display: block;
+    margin: 0 auto;
+}
+.btnadvance{
+    display: block;
+    margin: 0 auto;
+}
+}
