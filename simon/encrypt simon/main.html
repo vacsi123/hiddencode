@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MESSAGE ENCRYPTER</title>
+</head>
+<body>
+	<h1>MESSAGE ENCRYPTER</h1>
+	<label for="message">Enter your message:</label>
+	<input type="text" id="message" name="message">
+	<button onclick="encryptMessage()">Encrypt</button>
+	<div id="encrypted"></div>
+	<style> 
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		label {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		
+		input[type="text"] {
+			font-size: 16px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			width: 300px;
+		}
+		
+		button {
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #3e8e41;
+		}
+		
+		#encrypted {
+			font-size: 18px;
+			margin-top: 20px;
+			padding: 20px;
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+		</style> 
+    <script> function encryptMessage() {
+
+		var conversionDict = {'a': '4', 'o': '0', 'e': '3', 'i': '1'};
+		var messageInput = document.getElementById("message");
+		var message = messageInput.value;
+		var encryptedMessage = "";
+		for (var i = 0; i < message.length; i++) {
+			var char = message.charAt(i);
+			if (char.toLowerCase() in conversionDict) {
+				encryptedMessage += conversionDict[char.toLowerCase()];
+			} else {
+				encryptedMessage += char;
+			}
+		}
+		var encryptedOutput = document.getElementById("encrypted");
+		encryptedOutput.innerHTML = "<p>Encrypted message: " + encryptedMessage + "</p>";
+	}</script>
+</body>
+</html>
