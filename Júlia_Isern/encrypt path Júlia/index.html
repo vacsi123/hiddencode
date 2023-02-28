@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Message Encryptor</title>
+    
+  </head>
+
+  <body>
+    <h1>Message Encryptor</h1>
+    <form>
+      <label for="message">Enter your message:</label>
+      <input type="text" id="message" name="message">
+      <button type="button" onclick="encryptMessage()">Encrypt</button>
+    </form>
+    <div id="encrypted-message"></div>
+    <style> body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      width: 400px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      padding: 10px;
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    #encrypted-message {
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 400px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    </style>
+
+    <script> function encryptMessage() {
+      var message = document.getElementById("message").value.toLowerCase();
+      var encryptedMessage = "";
+    
+      for (var i = 0; i < message.length; i++) {
+        switch (message[i]) {
+          case "a":
+            encryptedMessage += "4";
+            break;
+          case "e":
+            encryptedMessage += "3";
+            break;
+          case "i":
+            encryptedMessage += "l";
+            break;
+          case "o":
+            encryptedMessage += "0";
+            break;
+          default:
+            encryptedMessage += message[i];
+        }
+      }
+    
+      document.getElementById("encrypted-message").innerHTML = encryptedMessage;
+    }
+    </script>
+  </body>
+</html>
