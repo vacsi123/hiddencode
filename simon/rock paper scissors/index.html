@@ -75,11 +75,11 @@
 		<p id="result">Choose your weapon!</p>
 		<button class="btn" id="reset-btn">Reset</button>
 	</div>
-	<script>// Define variables for player and computer scores
+	<script>
 		let playerScore = 0;
 		let computerScore = 0;
 		
-		// Define references to HTML elements
+		
 		const rockBtn = document.getElementById('rock-btn');
 		const paperBtn = document.getElementById('paper-btn');
 		const scissorsBtn = document.getElementById('scissors-btn');
@@ -88,14 +88,14 @@
 		const computerScoreboard = document.getElementById('computer-score');
 		const resetBtn = document.getElementById('reset-btn');
 		
-		// Function to generate computer's choice
+		
 		function getComputerChoice() {
 		  const choices = ['rock', 'paper', 'scissors'];
 		  const randomIndex = Math.floor(Math.random() * choices.length);
 		  return choices[randomIndex];
 		}
 		
-		// Function to determine the winner of a round
+		
 		function determineWinner(playerChoice, computerChoice) {
 		  if (playerChoice === computerChoice) {
 			return 'It\'s a tie!';
@@ -108,7 +108,7 @@
 		  }
 		}
 		
-		// Function to update the scores
+	
 		function updateScore(result) {
 		  if (result === 'You win!') {
 			playerScore++;
@@ -119,7 +119,7 @@
 		  computerScoreboard.innerText = computerScore;
 		}
 		
-		// Function to reset the game
+		
 		function resetGame() {
 		  playerScore = 0;
 		  computerScore = 0;
@@ -128,7 +128,7 @@
 		  result.innerText = 'Choose your weapon!';
 		}
 		
-		// Add event listeners for player choices
+		
 		rockBtn.addEventListener('click', () => {
 		  const computerChoice = getComputerChoice();
 		  const resultText = determineWinner('rock', computerChoice);
@@ -150,7 +150,7 @@
 		  updateScore(resultText);
 		});
 		
-		// Add event listener for reset button
+		
 		resetBtn.addEventListener('click', () => {
 		  resetGame();
 		});
