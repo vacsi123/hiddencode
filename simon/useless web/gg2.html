@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The button</title>
+	<style>
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  
+ position: relative;
+ left: 10%;
+}
+
+button:hover {
+	background-color: #db6a6a;
+	opacity: 0.8;
+			
+}
+
+button:active {
+  background-color: #1abc9c;
+  transform: translateY(1px);
+}
+
+#hidden-message {
+  display: none;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: spin 2s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+	</style>
+</head>
+<body>
+	<h1>The incredible Button</h1>
+	<p>Click the button to reveal the incredible.</p>
+	<button onclick="revealMessage()">Click me!</button>
+	<div id="hidden-message">Wow, you're so stupid</div>
+
+	<script>
+		function revealMessage() {
+  var hiddenMessage = document.getElementById("hidden-message");
+  if (hiddenMessage.style.display === "block") {
+    hiddenMessage.style.display = "none";
+  } else {
+    hiddenMessage.style.display = "block";
+    hiddenMessage.innerHTML = "Wow, you're so stupid.";
+    hiddenMessage.style.animation = "spin 2s linear";
+  }
+}
+
+	</script>
+</body>
+</html>

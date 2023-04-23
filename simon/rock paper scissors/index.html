@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<style>body {
+		font-family: Arial, sans-serif;
+		background-color: #f1f1f1;
+	  }
+	  
+	  .game-container {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+	  }
+	  
+	  h1 {
+		text-align: center;
+		color: #333;
+	  }
+	  
+	  .scoreboard {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	  }
+	  
+	  .choices {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	  }
+	  
+	  .btn {
+		padding: 10px 20px;
+		background-color: #333;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	  }
+	  
+	  .btn:hover {
+		background-color: #555;
+	  }
+	  
+	  #result {
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	  }
+	  
+	  #reset-btn {
+		display: block;
+		margin: 0 auto;
+	  }
+	  </style>
+</head>
+<body>
+	<div class="game-container">
+		<h1>Rock Paper Scissors</h1>
+		<div class="scoreboard">
+			<p>Player: <span id="player-score">0</span></p>
+			<p>Computer: <span id="computer-score">0</span></p>
+		</div>
+		<div class="choices">
+			<button class="btn" id="rock-btn">Rock</button>
+			<button class="btn" id="paper-btn">Paper</button>
+			<button class="btn" id="scissors-btn">Scissors</button>
+		</div>
+		<p id="result">Choose your weapon!</p>
+		<button class="btn" id="reset-btn">Reset</button>
+	</div>
+	<script>
+		let playerScore = 0;
+		let computerScore = 0;
+		
+		
+		const rockBtn = document.getElementById('rock-btn');
+		const paperBtn = document.getElementById('paper-btn');
+		const scissorsBtn = document.getElementById('scissors-btn');
+		const result = document.getElementById('result');
+		const playerScoreboard = document.getElementById('player-score');
+		const computerScoreboard = document.getElementById('computer-score');
+		const resetBtn = document.getElementById('reset-btn');
+		
+		
+		function getComputerChoice() {
+		  const choices = ['rock', 'paper', 'scissors'];
+		  const randomIndex = Math.floor(Math.random() * choices.length);
+		  return choices[randomIndex];
+		}
+		
+		
+		function determineWinner(playerChoice, computerChoice) {
+		  if (playerChoice === computerChoice) {
+			return 'It\'s a tie!';
+		  } else if (playerChoice === 'rock' && computerChoice === 'scissors' ||
+					 playerChoice === 'paper' && computerChoice === 'rock' ||
+					 playerChoice === 'scissors' && computerChoice === 'paper') {
+			return 'You win!';
+		  } else {
+			return 'Computer wins!';
+		  }
+		}
+		
+	
+		function updateScore(result) {
+		  if (result === 'You win!') {
+			playerScore++;
+		  } else if (result === 'Computer wins!') {
+			computerScore++;
+		  }
+		  playerScoreboard.innerText = playerScore;
+		  computerScoreboard.innerText = computerScore;
+		}
+		
+		
+		function resetGame() {
+		  playerScore = 0;
+		  computerScore = 0;
+		  playerScoreboard.innerText = playerScore;
+		  computerScoreboard.innerText = computerScore;
+		  result.innerText = 'Choose your weapon!';
+		}
+		
+		
+		rockBtn.addEventListener('click', () => {
+		  const computerChoice = getComputerChoice();
+		  const resultText = determineWinner('rock', computerChoice);
+		  result.innerText = resultText;
+		  updateScore(resultText);
+		});
+		
+		paperBtn.addEventListener('click', () => {
+		  const computerChoice = getComputerChoice();
+		  const resultText = determineWinner('paper', computerChoice);
+		  result.innerText = resultText;
+		  updateScore(resultText);
+		});
+		
+		scissorsBtn.addEventListener('click', () => {
+		  const computerChoice = getComputerChoice();
+		  const resultText = determineWinner('scissors', computerChoice);
+		  result.innerText = resultText;
+		  updateScore(resultText);
+		});
+		
+		
+		resetBtn.addEventListener('click', () => {
+		  resetGame();
+		});
+		</script>
+</body>
+</html>
