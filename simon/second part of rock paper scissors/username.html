@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<script src="script/username.js"></script>
+	<style>
+		body {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  height: 100vh;
+		  margin: 0;
+		}
+	  
+		h1 {
+		  text-align: center;
+		  margin-bottom: 20px;
+		}
+	  
+		input[type="text"], button {
+		  font-size: 1.2em;
+		  padding: 10px 20px;
+		  border-radius: 5px;
+		  border: none;
+		  background-color: #f2f2f2;
+		  margin-bottom: 20px;
+		}
+	  
+		button {
+		  cursor: pointer;
+		}
+	  </style>
+	  
+</head>
+<body>
+	<h1>Enter your username:</h1>
+	<input type="text" id="username">
+	<button onclick="saveUsername()">Submit</button>
+</body>
+</html>
